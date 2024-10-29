@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+</style>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>NunuBooks</title>
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao" />
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Aventura</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Contos</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Romance</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Suspense</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Terror</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Biografia</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Ficcção</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Investigação</a></li>
+            </ul>
+            <img src="img/logo.png" alt="Logo da NunuBooks" class="container__imagem">
+        </div>
+        
+        <div class="container">
+            <input type="text" class="banner__pesquisa" placeholder="Buscar...">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
+    </header>
+    
+    <section class="banner">
+      <h2 class="banner__titulo">Quer se aventurar no mundo dos livros?</h2>
+      <p class="banner__texto">Aqui você viaja por universos sem sair de casa!</p>
+      <input type="search" class="banner__pesquisa" placeholder="Pesquise aqui!"/>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        
+        <!-- Slider main container -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/mobydick.jpg" alt="Aventura" /></div>
+                <div class="swiper-slide"><img src="img/dias.jpg" alt="Romance" /></div>
+                <div class="swiper-slide"><img src="img/jant.jpg" alt="Suspense" /></div>
+                <div class="swiper-slide"><img src="img/ter.jpg" alt="Terror" /></div>
+                <div class="swiper-slide"><img src="img/morangos.jpg" alt="Contos" /></div>
+            </div>
+            
+            <!-- Seções de navegação e paginação do Swiper -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="container-geral">
+            <section class="card">
+                <div class="card__container">
+                    <img src="img/tordo.jpeg" class="card__imagem" alt="Box da saga Jogos Vorazes" />
+                    <div class="card__descricao">
+                        <h3 class="card__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="card__titulo-livro">Box da saga: Jogos Vorazes</h2>
+                        <p class="card__texto">A saga completa que conquistou o mundo está agora disponível em uma edição especial.</p>
+                    </div>
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item">
+                                <img src="img/Favoritos.svg" alt="Favoritar livro" />
+                            </li>
+                            <li class="botoes__item">
+                                <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+                            </li>
+                        </ul>
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+            </section>
+            <section class="card">
+                <div class="card__container">
+                    <img src="img/eo.jpeg" class="card__imagem" alt="Imagem nunu" />
+                    <div class="card__descricao">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="card__titulo">Desenvolvedora da página</h3>
+                        <h2 class="card__titulo-livro">Manuella Galan</h2>
+                        <p class="card__texto">Leitora compulsiva e estudante do ensino médio. </p>
+                    </div>
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar autora" /></li>
+                            <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho" /></li>
+                        </ul>
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="tópicos">
+            <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="tópicos__lista">
+              <li class="tópicos__item"><a href="#" class="tópicos__link">Aventura</a></li>
+              <li class="tópicos__item"><a href="#" class="tópicos__link">Contos</a></li>
+              <li class="tópicos__item"><a href="#" class="tópicos__link">Romance</a></li>
+              <li class="tópicos__item"><a href="#" class="tópicos__link">Suspense</a></li>
+              <li class="tópicos__item"><a href="#" class="tópicos__link">Terror</a></li>
+              <li class="tópicos__item"><a href="#" class="tópicos__link">Ficção</a></li>
+              <li class="tópicos__item"><a href="#" class="tópicos__link">Biografias</a></li>
+              <li class="tópicos__item"><a href="#" class="tópicos__link">Investigação</a></li>
+            </ul>
+          </section>
+          <section class="contato">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto"> Atualizações de e-books, novos livros, promoções e outros.</p>
+            <input type="email" placeholder="Cadastre seu e-mail" class="contato__email"/>
+          </section>
+          
+            <p class="rodape__copyright">© 2024 NunuBooks. Todos os direitos reservados.</p>
+        </footer>
+        <audio autoplay loop>
+            <source src="https://www.youtube.com/watch?v=lhEQXE2n3Go" type="audio/mpeg">
+        </audio>
+        
+        
+        
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+          spaceBetween: 10,
+          slidesPerView: 3,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+        });
+    </script>
+</body>
+</html>

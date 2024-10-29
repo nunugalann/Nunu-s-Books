@@ -1,0 +1,15 @@
+.cabeçalho__menu-hamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cabeçalho__menu-hamburguer span {
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+}

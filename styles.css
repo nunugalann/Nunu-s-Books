@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --cor-de-fundo: #f5e6fa; /* Fundo roxo pastel claro */
+    --cor-branco: #fff;
+    --cor-roxo-claro: #d4a5e4; /* Roxo pastel claro */
+    --cor-roxo-escuro: #8a4f9e; /* Roxo mais escuro para contraste */
+    --cor-link-hover: #b388eb; /* Roxo hover suave */
+    --cor-fundin: #bba7c9;
+    --cor-linda: #9252a1;
+    --cor-fund:#ccbcd0;
+    --roxao: #8E236B;
+    --font-size-padrao: 1rem;
+    --font-size-menu: 0.9rem;
+    --padding-menu: 15px 25px;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-size: var(--font-size-padrao);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Fonte moderna e elegante */
+}
+
+.cabeçalho {
+    background-color: var(--cor-roxo-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.cabeçalho__menu-hamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cabeçalho__menu-hamburguer span {
+    background-color: var(--cor-roxo-escuro);
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--cor-roxo-claro);
+    width: 250px; /* Ajuste da largura para o menu abrir apenas do lado */
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid var(--cor-roxo-escuro);
+    z-index: 5;
+}
+
+.lista-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-menu ul li {
+    padding: var(--padding-menu);
+    text-align: left; /* Alinhar os itens à esquerda */
+}
+
+.lista-menu ul li a {
+    text-decoration: none;
+    color: var(--cor-roxo-escuro); /* Altere a cor aqui para um tom mais elegante */
+    font-size: var(--font-size-menu);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Efeito de transição suave */
+    font-weight: 600; /* Tornando a fonte um pouco mais espessa */
+    border-radius: 10px; /* Arredondar um pouco os cantos */
+    padding: 10px 20px; /* Adicionando padding para tornar os itens maiores */
+}
+
+.lista-menu ul li a:hover {
+    color: var(--cor-branco); /* Cor do texto ao passar o mouse */
+    background-color: var(--cor-link-hover); /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adicionando sombra ao passar o mouse */
+}
+
+
+.container__botao {
+    display: none;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+.lista-menu__titulo,
+.lista-menu__item {
+  padding: 1em;
+}
+.banner__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--cor-branco);
+    color: var(--cor-branco);
+    border-radius: 24px;
+    padding: 0.5em 1em;
+    width: 250px; 
+    box-sizing: border-box;
+    margin: 0 15px; 
+}
+
+.banner__pesquisa::placeholder {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-branco);
+    opacity: 0.7;
+}
+.banner {
+    background: var(--cor-fundin);
+    color: var(--branco);
+    text-align: center;
+    padding: 2.5em 2em;
+  }
+  .banner__titulo {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .carrossel__titulo {
+    color: var(--roxao);
+    background-color: #fff;
+     text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1em 0 0.5em 0;
+  }
+
+  .carrossel {
+    padding: 2em 0;
+    .swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+}
+
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    color:#8E236B;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 200px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+  } 
+
+/* Estilos para o card fixo menor e alinhado à esquerda */
+.card {
+    background-color: var(--cor-branco);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    max-width: 250px; /* Menor largura para o card */
+    margin: 1em; /* Adiciona espaço em volta do card */
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.card__imagem {
+    width: 100%;
+    max-height: 150px; /* Reduz a altura da imagem */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card__descricao {
+    text-align: left;
+}
+
+.card__titulo {
+    font-size: 1rem;
+    color: var(--cor-roxo-escuro);
+    font-weight: 600;
+}
+
+.card__titulo-livro {
+    font-size: 1.2rem;
+    color: var(--roxao);
+    font-weight: 700;
+    margin-top: 0.3em;
+}
+
+.card__texto {
+    font-size: 0.9rem;
+    color: var(--cor-roxo-escuro);
+    line-height: 1.4;
+}
+
+.card__botoes {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 0.5em;
+}
+
+.botoes__item img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.botoes__ancora {
+    padding: 0.4em 1em;
+    background-color: var(--cor-roxo-claro);
+    color: var(--cor-branco);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.botoes__ancora:hover {
+    background-color: var(--cor-link-hover);
+}
+.container-geral {
+    display: flex;
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: center; /* Centraliza os cards na linha */
+    padding: 20px;
+}
+
+.card {
+    background: var(--cor-branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 250px; /* Largura fixa para os cards */
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card__imagem {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.card__descricao {
+    flex-grow: 1;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes__item img {
+    width: 30px;
+    cursor: pointer;
+}
+/* Estilo para a seção de tópicos */
+.tópicos {
+    background-color: var(--cor-roxo-claro);
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.tópicos__titulo {
+    color: var(--cor-branco);
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.tópicos__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.tópicos__item {
+    margin: 0;
+}
+
+.tópicos__link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--cor-roxo-escuro);
+    background-color: var(--cor-branco);
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tópicos__link:hover {
+    background-color: var(--cor-link-hover);
+    color: var(--cor-branco);
+}
+.contato {
+    background-color: var(--cor-roxo-claro);
+    padding: 2em;
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: 2em 0; 
+}
+
+.contato__titulo {
+    font-size: 2rem;
+    font-weight: 700; 
+    color: var(--cor-roxo-escuro); 
+    margin-bottom: 0.5em; 
+}
+
+.contato__texto {
+    font-size: 1.2rem; 
+    color: var(--cor-roxo-escuro); 
+    margin-bottom: 1.5em; 
+}
+
+.contato__email {
+    width: 80%;
+    max-width: 400px; 
+    padding: 0.8em; 
+    border: 2px solid var(--cor-roxo-escuro); 
+    border-radius: 24px;
+    outline: none; 
+    font-size: 1rem;
+    transition: border-color 0.3s ease; 
+}
+
+.contato__email::placeholder {
+    color: var(--cor-roxo-escuro); 
+    opacity: 0.
+}
